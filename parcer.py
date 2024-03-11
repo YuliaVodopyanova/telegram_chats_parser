@@ -17,7 +17,7 @@ def lemmatize_text(text):
 
 
 with TelegramClient('session_', api_id, api_hash, system_version="4.16.30-vxCUSTOM") as client:
-    messages = client.iter_messages(chat_id) #if there are too many messeges limit=... can be used
+    messages = client.iter_messages(chat_id) #if there are too many messages limit=... can be used
 
     with open('chat_data.csv', 'w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
